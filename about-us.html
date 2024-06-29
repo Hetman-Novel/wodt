@@ -4,9 +4,9 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="files/lazy-load-for-images/lazy-load-for-images.css?_v=20240629223234">
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20240629223234">
-   <link rel="stylesheet" href="css/style.min.css?_v=20240629223234">
+   <link rel="stylesheet" href="files/lazy-load-for-images/lazy-load-for-images.css?_v=20240630003131">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20240630003131">
+   <link rel="stylesheet" href="css/style.min.css?_v=20240630003131">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
    <title>About Us - WODT</title>
 </head>
@@ -75,19 +75,111 @@
       <main class="main about-us-page">
 
          <div class="about-us-page__blocks">
-            <div class="n_container">
-               <div class="about-us-page__block">
-                  <div class="about-us-page__blockColumn">
-                     <div class="about-us-page__blockImage">
-                        <img src="images/about-us-page-image-1.png" alt="">
+            <a href="#games" class="about-us-page__blocksButtonBotton link-to-bottom">
+               <span>
+                  <svg width="33" height="43" viewBox="0 0 33 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M15.0964 41.6544C15.9241 42.4821 17.266 42.4819 18.094 41.6539L31.5807 28.1672C32.408 27.3399 32.4083 25.9978 31.5806 25.1702C30.753 24.3426 29.4109 24.3429 28.5836 25.1702L16.5953 37.1585L4.60717 25.1703C3.77915 24.3423 2.43777 24.343 1.61045 25.1703C0.782429 25.9983 0.781722 27.3397 1.60974 28.1677L15.0964 41.6544ZM14.476 0.133998L14.4759 40.1557L18.7144 40.1557L18.7144 0.133998H14.476Z" fill="white"/>
+                  </svg>
+               </span>
+            </a>
+            <div class="about-us-page__block">
+               <div class="about-us-page__blockColumn">
+                  <div class="about-us-page__blockImage wrap-lazy-load-image">
+                     <img src="images/about-us-page-image-1.png" alt="">
+                  </div>
+               </div>
+               <div class="about-us-page__blockColumn">
+                  <div id="games" class="about-us-page__blockInfo">
+                     <p>/How it works</p>
+                     <div class="about-us-page__blockTitle">
+                        <h2>Games</h2>
+                     </div>
+                     <div class="about-us-page__blockText">
+                        <p>Lorem ipsum dolor sit amet consectetur. In massa enim feugiat at. Ut mauris ac ut platea id dictum arcu. Risus nibh vel nulla in sem nam. Nibh pellentesque consequat.</p>
+                     </div>
+                     <div class="about-us-page__blockInfoBottom">
+                        <div class="wrap-icons">
+                           <img src="images/svg/about-us-page-block-icon-active.svg" alt="">
+                           <img src="images/svg/about-us-page-block-icon-active.svg" alt="">
+                           <img src="images/svg/about-us-page-block-icon-no-active.svg" alt="">
+                           <img src="images/svg/about-us-page-block-icon-no-active.svg" alt="">
+                        </div>
+                        <div class="wrap-link">
+                           <p>+</p>
+                           <a href="#app" class="link-to-bottom">Scroll down</a>
+                        </div>
                      </div>
                   </div>
-                  <div class="about-us-page__blockColumn">
-               
+               </div>
+            </div>
+            <div class="about-us-page__block">
+               <div class="about-us-page__blockColumn">
+                  <div class="about-us-page__blockImage wrap-lazy-load-image">
+                     <img src="images/about-us-page-image-2.png" alt="">
+                  </div>
+               </div>
+               <div class="about-us-page__blockColumn">
+                  <div id="app" class="about-us-page__blockInfo">
+                     <p>/How it works</p>
+                     <div class="about-us-page__blockTitle">
+                        <h2>Apps</h2>
+                     </div>
+                     <div class="about-us-page__blockText">
+                        <p>Lorem ipsum dolor sit amet consectetur. Sed leo arcu sit in integer nunc eget turpis ultrices. Turpis sed sem tellus morbi mattis gravida laoreet posuere tempor. Ut.</p>
+                     </div>
+                     <div class="about-us-page__blockInfoBottom">
+                        <div class="wrap-icons">
+                           <img src="images/svg/about-us-page-block-icon-active.svg" alt="">
+                           <img src="images/svg/about-us-page-block-icon-active.svg" alt="">
+                           <img src="images/svg/about-us-page-block-icon-active.svg" alt="">
+                           <img src="images/svg/about-us-page-block-icon-no-active.svg" alt="">
+                        </div>
+                        <div class="wrap-link">
+                           <p>+</p>
+                           <a href="#sites" class="link-to-bottom">Scroll down</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="about-us-page__block">
+               <div class="about-us-page__blockColumn">
+                  <div class="about-us-page__blockImage wrap-lazy-load-image laptop">
+                     <img src="images/about-us-page-image-3.png" alt="">
+                  </div>
+               </div>
+               <div class="about-us-page__blockColumn">
+                  <div id="sites" class="about-us-page__blockInfo">
+                     <p>/How it works</p>
+                     <div class="about-us-page__blockTitle">
+                        <h2>Sites</h2>
+                     </div>
+                     <div class="about-us-page__blockText">
+                        <p>Lorem ipsum dolor sit amet consectetur. At bibendum enim elit ac eu tellus augue.</p>
+                     </div>
+                     <div class="about-us-page__blockInfoBottom">
+                        <div class="wrap-icons">
+                           <img src="images/svg/about-us-page-block-icon-active.svg" alt="">
+                           <img src="images/svg/about-us-page-block-icon-active.svg" alt="">
+                           <img src="images/svg/about-us-page-block-icon-active.svg" alt="">
+                           <img src="images/svg/about-us-page-block-icon-active.svg" alt="">
+                        </div>
+                        <div class="wrap-link">
+                           <p>+</p>
+                           <a href="#work-with" class="link-to-bottom">Scroll down</a>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
+
+         <section id="work-with" class="work-with">
+            <div class="n_container">
+               <h2 class="n_sec-title">A Few of The Creators We Work With</h2>
+
+            </div>
+         </section>
       
          <section class="contact-us">
    <div class="n_container">
@@ -206,12 +298,12 @@
 </div>
    </div>
 
-   <script src="js/script.min.js?_v=20240629223234"></script>
+   <script src="js/script.min.js?_v=20240630003131"></script>
 
-   <script src="files/lazy-load-for-images/lazy-load-for-images.js?_v=20240629223234"></script>
+   <script src="files/lazy-load-for-images/lazy-load-for-images.js?_v=20240630003131"></script>
    
-   <script src="files/swiper/js/swiper-bundle.min.js?_v=20240629223234"></script>
-   <script src="files/swiper/js/init.js?_v=20240629223234"></script>
+   <script src="files/swiper/js/swiper-bundle.min.js?_v=20240630003131"></script>
+   <script src="files/swiper/js/init.js?_v=20240630003131"></script>
 
 </body>
 </html>

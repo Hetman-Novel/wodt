@@ -2787,6 +2787,277 @@ body._touch .header .menu__list > li._active .menu__arrow {
   font-weight: 600;
 }
 
+/* Page - Abaut Us */
+
+.about-us-page {
+  overflow: hidden;
+}
+
+.about-us-page__blocks {
+  counter-reset: section;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-top: 100px;
+  position: relative;
+}
+
+.about-us-page__blocksButtonBotton {
+  background-color: #fff;
+  border-radius: 50%;
+  left: 50%;
+  height: 212px;
+  position: absolute;
+  transform: translate(calc(-50% + 15px), -50%);
+  width: 212px;
+  z-index: 3;
+}
+
+.about-us-page__blocksButtonBotton span {
+  align-items: center;
+  background-color: #000;
+  border-radius: 50%;
+  height: 104.18px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 104.18px;
+}
+
+.about-us-page__block {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+}
+
+.about-us-page__block::after {
+  background-color: #313133;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transform: translate(98%);
+  right: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 0;
+}
+
+.about-us-page__blockColumn {
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(50% - 30px);
+}
+
+.about-us-page__blockColumn:nth-child(2) {
+  background-color: #313133;
+  padding: 0 36px;
+  position: relative;
+}
+
+.about-us-page__blockImage {
+  display: table;
+  margin-left: auto;
+}
+
+.about-us-page__blockImage.laptop img {
+  transform: translateX(12%);
+  z-index: 3;
+}
+
+.about-us-page__blockImage img {
+  max-width: 883px;
+  position: relative;
+  transform: translate(3.6%, 9%);
+  z-index: 3;
+}
+
+.about-us-page__blockInfo {
+  margin-top: 77px;
+  padding-top: 150px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-us-page__blockInfo p {
+  color: #A4E2F7;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.8px;
+  margin: 0;
+}
+
+.about-us-page__blockTitle,
+.about-us-page__blockText,
+.about-us-page__blockInfoBottom {
+  border-bottom: 1px solid rgba(205, 247, 255, 0.2);
+}
+
+.about-us-page__blockTitle {
+  border-top: 1px solid rgba(205, 247, 255, 0.2);
+  margin-top: 48px;
+  padding-bottom: 192px;
+  padding-top: 16px;
+}
+
+.about-us-page__blockTitle h1,
+.about-us-page__blockTitle h2,
+.about-us-page__blockTitle h3,
+.about-us-page__blockTitle h4,
+.about-us-page__blockTitle h5,
+.about-us-page__blockTitle h6 {
+  color: #A4E2F7;
+  font-size: 187.2px;
+  font-weight: 400;
+  line-height: 168.48px;
+  letter-spacing: -5.6160001755px;
+  margin: 0;
+  padding-left: 135px;
+  position: relative;
+}
+
+.about-us-page__blockTitle h1:nth-child(1)::before,
+.about-us-page__blockTitle h1:nth-child(2)::before,
+.about-us-page__blockTitle h1:nth-child(3)::before,
+.about-us-page__blockTitle h1:nth-child(4)::before,
+.about-us-page__blockTitle h1:nth-child(5)::before,
+.about-us-page__blockTitle h1:nth-child(6)::before,
+.about-us-page__blockTitle h1:nth-child(7)::before,
+.about-us-page__blockTitle h1:nth-child(8)::before,
+.about-us-page__blockTitle h1:nth-child(9)::before,
+.about-us-page__blockTitle h2:nth-child(1)::before,
+.about-us-page__blockTitle h2:nth-child(2)::before,
+.about-us-page__blockTitle h2:nth-child(3)::before,
+.about-us-page__blockTitle h2:nth-child(4)::before,
+.about-us-page__blockTitle h2:nth-child(5)::before,
+.about-us-page__blockTitle h2:nth-child(6)::before,
+.about-us-page__blockTitle h2:nth-child(7)::before,
+.about-us-page__blockTitle h2:nth-child(8)::before,
+.about-us-page__blockTitle h2:nth-child(9)::before,
+.about-us-page__blockTitle h3:nth-child(1)::before,
+.about-us-page__blockTitle h3:nth-child(2)::before,
+.about-us-page__blockTitle h3:nth-child(3)::before,
+.about-us-page__blockTitle h3:nth-child(4)::before,
+.about-us-page__blockTitle h3:nth-child(5)::before,
+.about-us-page__blockTitle h3:nth-child(6)::before,
+.about-us-page__blockTitle h3:nth-child(7)::before,
+.about-us-page__blockTitle h3:nth-child(8)::before,
+.about-us-page__blockTitle h3:nth-child(9)::before,
+.about-us-page__blockTitle h4:nth-child(1)::before,
+.about-us-page__blockTitle h4:nth-child(2)::before,
+.about-us-page__blockTitle h4:nth-child(3)::before,
+.about-us-page__blockTitle h4:nth-child(4)::before,
+.about-us-page__blockTitle h4:nth-child(5)::before,
+.about-us-page__blockTitle h4:nth-child(6)::before,
+.about-us-page__blockTitle h4:nth-child(7)::before,
+.about-us-page__blockTitle h4:nth-child(8)::before,
+.about-us-page__blockTitle h4:nth-child(9)::before,
+.about-us-page__blockTitle h5:nth-child(1)::before,
+.about-us-page__blockTitle h5:nth-child(2)::before,
+.about-us-page__blockTitle h5:nth-child(3)::before,
+.about-us-page__blockTitle h5:nth-child(4)::before,
+.about-us-page__blockTitle h5:nth-child(5)::before,
+.about-us-page__blockTitle h5:nth-child(6)::before,
+.about-us-page__blockTitle h5:nth-child(7)::before,
+.about-us-page__blockTitle h5:nth-child(8)::before,
+.about-us-page__blockTitle h5:nth-child(9)::before,
+.about-us-page__blockTitle h6:nth-child(1)::before,
+.about-us-page__blockTitle h6:nth-child(2)::before,
+.about-us-page__blockTitle h6:nth-child(3)::before,
+.about-us-page__blockTitle h6:nth-child(4)::before,
+.about-us-page__blockTitle h6:nth-child(5)::before,
+.about-us-page__blockTitle h6:nth-child(6)::before,
+.about-us-page__blockTitle h6:nth-child(7)::before,
+.about-us-page__blockTitle h6:nth-child(8)::before,
+.about-us-page__blockTitle h6:nth-child(9)::before {
+  content: "0" counter(section);
+}
+
+.about-us-page__blockTitle h1::before,
+.about-us-page__blockTitle h2::before,
+.about-us-page__blockTitle h3::before,
+.about-us-page__blockTitle h4::before,
+.about-us-page__blockTitle h5::before,
+.about-us-page__blockTitle h6::before {
+  counter-increment: section;
+  content: counter(section);
+  font-family: "Arial", sans-serif;
+  font-size: 57.6px;
+  font-weight: 400;
+  line-height: 74.88px;
+  letter-spacing: 1px;
+  left: 0;
+  position: absolute;
+  top: -3px;
+}
+
+.about-us-page__blockText {
+  padding: 25px 25px 25px 136px;
+}
+
+.about-us-page__blockText p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  max-width: 400px;
+  margin: 0;
+}
+
+.about-us-page__blockInfoBottom {
+  padding-bottom: 32px;
+}
+
+.about-us-page__block .wrap-icons {
+  display: table;
+  margin: 28px 0 28px auto;
+}
+
+.about-us-page__block .wrap-icons img:not(:first-child) {
+  margin-left: 13px;
+}
+
+.about-us-page__block .wrap-link {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 194px;
+}
+
+.about-us-page__block .wrap-link p {
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-right: 12px;
+  text-align: left;
+}
+
+.about-us-page__block .wrap-link a {
+  color: #A4E2F7;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.8px;
+  text-align: right;
+}
+
+.about-us-page__block .wrap-link a::after {
+  content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='7' height='15' viewBox='0 0 7 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0.825317 11.325V10.7312C1.44511 11.0385 1.8774 11.2703 2.12219 11.4265C2.37219 11.5828 2.74459 11.8588 3.23938 12.2546V0.739014H4.02844V12.2546C4.59094 11.7182 5.39563 11.2052 6.4425 10.7156V11.3171C5.6925 11.989 5.12219 12.5671 4.73157 13.0515C4.34615 13.5359 4.03105 14.0359 3.78625 14.5515H3.42688C3.23417 14.1036 2.9399 13.627 2.54407 13.1218C2.15344 12.6166 1.58053 12.0177 0.825317 11.325Z' fill='%23A4E2F7'/%3e%3c/svg%3e");
+  margin-left: 9px;
+  position: relative;
+  pointer-events: none;
+  top: 4px;
+}
+
+.work-with {
+  margin-top: 126px;
+  padding-bottom: 150px;
+  padding-top: 150px;
+}
+
 /* Footer */
 
 .wrap-footer {
