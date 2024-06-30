@@ -2346,6 +2346,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   z-index: 3;
 }
 
+.banner .sk-spinner-pulse {
+  display: none;
+}
+
 .about-us {
   padding-top: 150px;
 }
@@ -2816,6 +2820,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   top: 55%;
   transform: translate(-50%, -50%);
   width: 705px;
+}
+
+.about-us-page__head .sk-spinner-pulse {
+  display: none;
 }
 
 .about-us-page__blocks {
