@@ -845,20 +845,6 @@ body._lock {
   overflow: hidden;
 }
 
-body::-webkit-scrollbar {
-  width: 12px;
-}
-
-body::-webkit-scrollbar-track {
-  background: rgb(66, 66, 66);
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(134, 134, 134);
-  border-radius: 20px;
-  border: 3px solid rgb(66, 66, 66);
-}
-
 body p {
   font-family: "Rubik", sans-serif;
   font-weight: 300;
@@ -3217,6 +3203,91 @@ body._touch .header .menu__list > li._active .menu__arrow {
   right: 0;
 }
 
+/* Page - Contact Us */
+
+.contact-us-page .wrap-sec-title {
+  align-items: center;
+}
+
+/* Page - Page */
+
+.page {
+  margin-bottom: -81px;
+  margin-top: 50px;
+}
+
+.page .n_container {
+  max-width: 1745px;
+}
+
+.page__wrapBlockText {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.page__blockTitle {
+  position: relative;
+}
+
+.page__blockTitle h1 {
+  color: #fff;
+  font-size: 90px;
+  font-weight: 300;
+  line-height: 108px;
+  letter-spacing: 0.4799999893px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.page__blockTitle h1 strong {
+  font-weight: 500;
+}
+
+.page__blockTitle img {
+  left: 1.5%;
+  pointer-events: none;
+  position: absolute;
+  top: -3%;
+  z-index: -1;
+}
+
+.page__blockText {
+  background-color: rgba(245, 245, 245, 0.1);
+  border-radius: 15px;
+  padding: 46px;
+}
+
+.page__blockText h1,
+.page__blockText h2,
+.page__blockText h3,
+.page__blockText h4,
+.page__blockText h5,
+.page__blockText h6 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+  letter-spacing: 0.4799999893px;
+  margin: 0 0 8px;
+}
+
+.page__blockText h1:not(:first-child),
+.page__blockText h2:not(:first-child),
+.page__blockText h3:not(:first-child),
+.page__blockText h4:not(:first-child),
+.page__blockText h5:not(:first-child),
+.page__blockText h6:not(:first-child) {
+  margin-top: 36px;
+}
+
+.page__blockText p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 27.2px;
+  letter-spacing: 0.4799999893px;
+  margin: 0;
+}
+
 /* Footer */
 
 .wrap-footer {
@@ -3463,6 +3534,20 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 /* Plyr video player */
 
+@media screen and (min-width: 481px) {
+  .contact-us-page .wrap-sec-title::after {
+    display: none;
+  }
+
+  .contact-us-page .wrap-sec-title strong {
+    display: table;
+  }
+
+  .contact-us-page .wrap-sec-title h3 {
+    margin: -22px 0 22px 20px;
+  }
+}
+
 @media screen and (min-width: 576px) {
   .first-screen__title-row:nth-child(3) .name .fillet-element.left {
     display: none;
@@ -3490,6 +3575,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .work-with__wrap-title {
     display: flex;
+  }
+
+  .contact-us-page .wrap-sec-title h3 {
+    margin: -35px 0 35px 70px;
   }
 }
 
@@ -3593,6 +3682,78 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .portfolio__item p {
     max-width: 405px;
+  }
+
+  .page__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .page__item {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .page__item:nth-child(1) {
+    width: calc(45% - 30px);
+  }
+
+  .page__item:nth-child(2) {
+    width: calc(55% - 30px);
+  }
+
+  .page__blockTitle {
+    padding-right: 20px;
+  }
+
+  .page__blockTitle h1 strong {
+    display: table;
+  }
+
+  .page__blockText {
+    max-height: 684px;
+    overflow-y: auto;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  body::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: rgb(66, 66, 66);
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(134, 134, 134);
+    border-radius: 20px;
+    border: 3px solid rgb(66, 66, 66);
+  }
+
+  .contact-us-page .wrap-sec-title {
+    margin: -6px 0 0;
+  }
+
+  .contact-us-page .contact-us__items {
+    margin-bottom: 30px;
+    margin-top: -14px;
+  }
+
+  .page__blockText::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  .page__blockText::-webkit-scrollbar-track {
+    background-color: #7E7E7E;
+    border-radius: 60px;
+  }
+
+  .page__blockText::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 60px;
   }
 }
 
@@ -3820,6 +3981,56 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 }
 
+@media screen and (min-width: 1367px) {
+  .page__item:nth-child(1) {
+    width: calc(59% - 30px);
+  }
+
+  .page__item:nth-child(2) {
+    width: calc(41% - 30px);
+  }
+}
+
+@media screen and (min-width: 1501px) {
+  .page__item:nth-child(1) {
+    width: calc(54% - 30px);
+  }
+
+  .page__item:nth-child(2) {
+    width: calc(46% - 30px);
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .page__item:nth-child(1) {
+    width: calc(58% - 30px);
+  }
+
+  .page__item:nth-child(2) {
+    width: calc(42% - 30px);
+  }
+}
+
+@media screen and (min-width: 1681px) {
+  .page__item:nth-child(1) {
+    width: calc(55% - 30px);
+  }
+
+  .page__item:nth-child(2) {
+    width: calc(45% - 30px);
+  }
+}
+
+@media screen and (min-width: 1821px) {
+  .page__item:nth-child(1) {
+    width: calc(50% - 28px);
+  }
+
+  .page__item:nth-child(2) {
+    width: calc(50% - 32px);
+  }
+}
+
 @media screen and (max-width: 1600.98px) {
   .about-us-page__blockTitle h1,
   .about-us-page__blockTitle h2,
@@ -3829,6 +4040,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .about-us-page__blockTitle h6 {
     font-size: 157.2px;
     line-height: 138.48px;
+  }
+
+  .page .n_container {
+    max-width: 1555px;
   }
 
   .footer__item:nth-child(1) {
@@ -4010,6 +4225,20 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .first-screen__title-row:nth-child(3) .name::after {
     left: -10%;
   }
+
+  .page {
+    margin-bottom: 30px;
+  }
+
+  .page__blockTitle h1 {
+    font-size: 64px;
+    line-height: 69.63px;
+  }
+
+  .page__blockTitle img {
+    max-width: 300px;
+    top: -5%;
+  }
 }
 
 @media screen and (max-width: 1280.98px) {
@@ -4099,6 +4328,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .about-us-page__blockTitle h6 {
     font-size: 117.2px;
     line-height: 98.48px;
+  }
+
+  .page {
+    margin-bottom: 0;
   }
 
   .footer__link li {
@@ -4823,6 +5056,15 @@ body._touch .header .menu__list > li._active .menu__arrow {
     width: 60px;
   }
 
+  .page__blockTitle h1 {
+    font-size: 50px;
+    line-height: 55.63px;
+  }
+
+  .page__blockTitle img {
+    max-width: 237px;
+  }
+
   .footer__link {
     padding: 0 20px 20px 10px;
   }
@@ -4905,6 +5147,15 @@ body._touch .header .menu__list > li._active .menu__arrow {
     font-size: 16px;
     line-height: 20px;
     margin-top: 10px;
+  }
+
+  .page__blockTitle {
+    margin-bottom: 160px;
+  }
+
+  .page__blockTitle img {
+    max-width: 320px;
+    top: -25%;
   }
 }
 
@@ -5368,6 +5619,15 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .work-with__slider {
     margin-top: 20px;
   }
+
+  .page__blockTitle h1 {
+    font-size: 40px;
+    line-height: 45.63px;
+  }
+
+  .page__blockTitle img {
+    top: -60%;
+  }
 }
 
 @media screen and (max-width: 600.98px) {
@@ -5755,6 +6015,51 @@ body._touch .header .menu__list > li._active .menu__arrow {
     width: 40px;
   }
 
+  .page {
+    margin-top: 30px;
+  }
+
+  .page__blockTitle {
+    margin-bottom: 130px;
+  }
+
+  .page__blockTitle h1 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .page__blockTitle img {
+    max-width: 260px;
+    top: -60%;
+  }
+
+  .page__blockText {
+    padding: 25px 20px;
+  }
+
+  .page__blockText h1,
+  .page__blockText h2,
+  .page__blockText h3,
+  .page__blockText h4,
+  .page__blockText h5,
+  .page__blockText h6 {
+    font-size: 16px;
+  }
+
+  .page__blockText h1:not(:first-child),
+  .page__blockText h2:not(:first-child),
+  .page__blockText h3:not(:first-child),
+  .page__blockText h4:not(:first-child),
+  .page__blockText h5:not(:first-child),
+  .page__blockText h6:not(:first-child) {
+    margin-top: 26px;
+  }
+
+  .page__blockText p {
+    font-size: 13px;
+    line-height: 21px;
+  }
+
   .footer__link {
     justify-content: center;
     padding-right: 10px;
@@ -6055,6 +6360,23 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .block-ticker .ticker.middle,
   .block-ticker .ticker.bottom {
     left: 65%;
+  }
+
+  .page {
+    margin-top: 10px;
+  }
+
+  .page__blockTitle {
+    margin-bottom: 100px;
+  }
+
+  .page__blockTitle h1 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .page__blockTitle img {
+    max-width: 220px;
   }
 }
 
