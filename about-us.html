@@ -4,9 +4,9 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="files/lazy-load-for-images/lazy-load-for-images.css?_v=20240630003131">
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20240630003131">
-   <link rel="stylesheet" href="css/style.min.css?_v=20240630003131">
+   <link rel="stylesheet" href="files/lazy-load-for-images/lazy-load-for-images.css?_v=20240630123302">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20240630123302">
+   <link rel="stylesheet" href="css/style.min.css?_v=20240630123302">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
    <title>About Us - WODT</title>
 </head>
@@ -26,7 +26,7 @@
                <nav class="menu-topmenu-container">
                   <ul class="menu__list">
                      <li class="menu-item current-menu-item current_page_item">
-                        <a class="menu__link" href="/">Home</a>
+                        <a class="menu__link" href="/index.html">Home</a>
                      </li>
                      <!---
                      <li class="menu-item menu-item-has-children">
@@ -73,6 +73,13 @@
    </div>
 </header>
       <main class="main about-us-page">
+
+         <div class="about-us-page__head">
+            <div class="n_container">
+               <h1>Wodt</h1>
+               <img src="images/contact-us-illustration.png" alt="">
+            </div>
+         </div>
 
          <div class="about-us-page__blocks">
             <a href="#games" class="about-us-page__blocksButtonBotton link-to-bottom">
@@ -176,8 +183,184 @@
 
          <section id="work-with" class="work-with">
             <div class="n_container">
-               <h2 class="n_sec-title">A Few of The Creators We Work With</h2>
-
+               <div class="work-with__wrap-title">
+                  <h2 class="n_sec-title">A Few of The Creators We Work With</h2>
+                  <div class="work-with-slider-wrap-buttons">
+                     <div id="work-with-slider-btn-prev" class="swiper-button-prev">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                           <rect width="80" height="80" fill="url(#pattern0_0_557)"/>
+                           <defs>
+                              <pattern id="pattern0_0_557" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                 <use xlink:href="#image0_0_557" transform="scale(0.00833333)"/>
+                              </pattern>
+                              <image id="image0_0_557" width="120" height="120" xlink:href="data:image/png;base64,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"/>
+                           </defs>
+                        </svg>
+                     </div>
+                     <div id="work-with-slider-btn-next" class="swiper-button-next">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                           <rect width="80" height="80" fill="url(#pattern0_0_559)"/>
+                           <defs>
+                              <pattern id="pattern0_0_559" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                 <use xlink:href="#image0_0_559" transform="scale(0.00833333)"/>
+                              </pattern>
+                              <image id="image0_0_559" width="120" height="120" xlink:href="data:image/png;base64,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"/>
+                           </defs>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="work-with__slider swiper-conteiner">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                        <img class="work-with__sliderBorder" src="images/work-with-slider-border.png" alt="">
+                        <div class="work-with__sliderBlockPhoto">
+                           <img src="images/work-with-slider-photo-2.jpg" alt="">
+                        </div>
+                        <h3>quick</h3>
+                        <div class="work-with__sliderSlideBottom">
+                           <p>
+                              <span>
+                                 <img src="images/svg/group-icon.svg" alt="">
+                              </span>
+                              110.9
+                           </p>
+                           <p>
+                              <span>
+                                 <img src="images/svg/like-icon.svg" alt="">
+                              </span>
+                              2.5 M
+                           </p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <img class="work-with__sliderBorder" src="images/work-with-slider-border.png" alt="">
+                        <div class="work-with__sliderBlockPhoto">
+                           <img src="images/work-with-slider-photo-3.jpg" alt="">
+                        </div>
+                        <h3>Luxot</h3>
+                        <div class="work-with__sliderSlideBottom">
+                           <p>
+                              <span>
+                                 <img src="images/svg/group-icon.svg" alt="">
+                              </span>
+                              215.6k
+                           </p>
+                           <p>
+                              <span>
+                                 <img src="images/svg/like-icon.svg" alt="">
+                              </span>
+                              6.0 M
+                           </p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <img class="work-with__sliderBorder" src="images/work-with-slider-border.png" alt="">
+                        <div class="work-with__sliderBlockPhoto">
+                           <img src="images/work-with-slider-photo-4.jpg" alt="">
+                        </div>
+                        <h3>Monney</h3>
+                        <div class="work-with__sliderSlideBottom">
+                           <p>
+                              <span>
+                                 <img src="images/svg/group-icon.svg" alt="">
+                              </span>
+                              190.2k
+                           </p>
+                           <p>
+                              <span>
+                                 <img src="images/svg/like-icon.svg" alt="">
+                              </span>
+                              5.4 M
+                           </p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <img class="work-with__sliderBorder" src="images/work-with-slider-border.png" alt="">
+                        <div class="work-with__sliderBlockPhoto">
+                           <img src="images/work-with-slider-photo-5.jpg" alt="">
+                        </div>
+                        <h3>PeeVR</h3>
+                        <div class="work-with__sliderSlideBottom">
+                           <p>
+                              <span>
+                                 <img src="images/svg/group-icon.svg" alt="">
+                              </span>
+                              52.3k
+                           </p>
+                           <p>
+                              <span>
+                                 <img src="images/svg/like-icon.svg" alt="">
+                              </span>
+                              500.6k
+                           </p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <img class="work-with__sliderBorder" src="images/work-with-slider-border.png" alt="">
+                        <div class="work-with__sliderBlockPhoto">
+                           <img src="images/work-with-slider-photo-6.jpg" alt="">
+                        </div>
+                        <h3>Merry</h3>
+                        <div class="work-with__sliderSlideBottom">
+                           <p>
+                              <span>
+                                 <img src="images/svg/group-icon.svg" alt="">
+                              </span>
+                              52.3k
+                           </p>
+                           <p>
+                              <span>
+                                 <img src="images/svg/like-icon.svg" alt="">
+                              </span>
+                              500.6k
+                           </p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <img class="work-with__sliderBorder" src="images/work-with-slider-border.png" alt="">
+                        <div class="work-with__sliderBlockPhoto">
+                           <img src="images/work-with-slider-photo-1.jpg" alt="">
+                        </div>
+                        <h3>games</h3>
+                        <div class="work-with__sliderSlideBottom">
+                           <p>
+                              <span>
+                                 <img src="images/svg/group-icon.svg" alt="">
+                              </span>
+                              52.3k
+                           </p>
+                           <p>
+                              <span>
+                                 <img src="images/svg/like-icon.svg" alt="">
+                              </span>
+                              500.6k
+                           </p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <img class="work-with__sliderBorder" src="images/work-with-slider-border.png" alt="">
+                        <div class="work-with__sliderBlockPhoto">
+                           <img src="images/work-with-slider-photo-1.jpg" alt="">
+                        </div>
+                        <h3>games</h3>
+                        <div class="work-with__sliderSlideBottom">
+                           <p>
+                              <span>
+                                 <img src="images/svg/group-icon.svg" alt="">
+                              </span>
+                              52.3k
+                           </p>
+                           <p>
+                              <span>
+                                 <img src="images/svg/like-icon.svg" alt="">
+                              </span>
+                              500.6k
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
          </section>
       
@@ -269,7 +452,7 @@
          <nav class="footer__nav-menu">
             <ul>
                <li class="current-menu-item current_page_item">
-                  <a href="/">Home</a>
+                  <a href="/index.html">Home</a>
                </li>
                <li>
                   <a href="about-us.html">About us</a>
@@ -298,12 +481,12 @@
 </div>
    </div>
 
-   <script src="js/script.min.js?_v=20240630003131"></script>
+   <script src="js/script.min.js?_v=20240630123302"></script>
 
-   <script src="files/lazy-load-for-images/lazy-load-for-images.js?_v=20240630003131"></script>
+   <script src="files/lazy-load-for-images/lazy-load-for-images.js?_v=20240630123302"></script>
    
-   <script src="files/swiper/js/swiper-bundle.min.js?_v=20240630003131"></script>
-   <script src="files/swiper/js/init.js?_v=20240630003131"></script>
+   <script src="files/swiper/js/swiper-bundle.min.js?_v=20240630123302"></script>
+   <script src="files/swiper/js/init.js?_v=20240630123302"></script>
 
 </body>
 </html>
