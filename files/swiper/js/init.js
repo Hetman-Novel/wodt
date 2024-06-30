@@ -1,4 +1,3 @@
-/*
 const lazyImages = document.querySelectorAll('img[loading="lazy"]'); // Получаем все изображения с атрибутом loading="lazy"
 function addLoadedClass(image) { // Функция для добавления класса к родителю изображения после его загрузки
    const parentElement = image.parentElement;
@@ -11,7 +10,7 @@ function addLoadedClass(image) { // Функция для добавления �
    }
 }
 lazyImages.forEach(addLoadedClass); // Перебираем все изображения и вызываем функцию addLoadedClass для каждого
-*/
+
 /* === */
 
 const workWithSlider = document.querySelector('.work-with__slider')
@@ -32,14 +31,14 @@ if (workWithSlider) {
          deley: 60000,
          stopOnLastSlide: false,
          disableOnInteraction: false,
-      },
+      },*/
       preloadImages: false,
       lazy: {
          loadOnTransitionStart: false,
          loadPrewNext: false,
       },
       watchSlidesProgress: true,
-      watchSlidesVisibility: true,*/
+      watchSlidesVisibility: true,
       breakpoints: {
          0: {
             slidesPerView: 1.5,
